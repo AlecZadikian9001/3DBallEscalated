@@ -10,4 +10,9 @@
 
 @interface Block : NSObject
 
+@property(nonatomic) CGRect rect;
+@property(nonatomic) double height;
+
+- (bool) intersectsPointWithX: (double) x Y: (double) y Z: (double) z;
+
 @end

@@ -7,25 +7,43 @@
 //
 
 #import "MainViewController.h"
+#import <iAd/iAd.h>
+#import "iAd/ADBannerView.h"
+#import "GameViewController.h"
+
+#define frameX (self.view.frame.origin.x)
+#define frameY (self.view.frame.origin.y)
+#define frameW (self.view.frame.size.width)
+#define frameH (self.view.frame.size.height)
+
+#define adX (frameX)
 
 @interface MainViewController ()
-
+@property(strong, nonatomic) ADBannerView* ad;
+@property(strong, nonatomic) GameViewController* game;
+@property(nonatomic) bool bannerIsVisible;
 @end
 
 @implementation MainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (id)init{
+    self = [super init];
     if (self) {
-        // Custom initialization
+        NSLog(@"MainViewController initializing.");
+        _ad = [[ADBannerView alloc] initWithAdType:ADAdTypeBanner];
+        _ad.delegate = self;
+        _ad.frame = CGRectMake(adX, frameY + frameH, _ad.frame.size.width, _ad.frame.size.height);
+        _game = [[GameViewController alloc] initWithGameFrame:CGRectMake(frameX, frameY, frameW, frameH - _ad.frame.size.height)];
+        [self.view addSubview:_ad];
+        [self.view addSubview:_game.view];
+        [_game start]; // TODO test
     }
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
+    NSLog(@"MainViewController viewDidLoad");
     // Do any additional setup after loading the view.
 }
 
@@ -35,15 +53,27 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner{
+    NSLog(@"BannerViewDidLoadAd");
+    if (!_bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+        banner.frame = CGRectOffset(banner.frame, 0, -banner.frame.size.height);
+        [UIView commitAnimations];
+        self.bannerIsVisible = YES;
+    }
 }
-*/
+
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+    if (_bannerIsVisible)
+    {
+        [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+        banner.frame = CGRectOffset(banner.frame, 0, banner.frame.size.height);
+        [UIView commitAnimations];
+        self.bannerIsVisible = NO;
+    }
+}
 
 @end

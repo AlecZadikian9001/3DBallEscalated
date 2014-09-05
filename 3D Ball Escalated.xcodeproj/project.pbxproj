@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1300A3519B8198400AD1F29 /* Block.m in Sources */ = {isa = PBXBuildFile; fileRef = E1300A3419B8198400AD1F29 /* Block.m */; };
+		E1300A3819B81BFD00AD1F29 /* BlockView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1300A3719B81BFD00AD1F29 /* BlockView.m */; };
+		E1349AD019B555FC0017DE70 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349ACF19B555FC0017DE70 /* GameView.m */; };
+		E1349AD319B556130017DE70 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349AD219B556130017DE70 /* GameViewController.m */; };
+		E1349AD619B556640017DE70 /* Ball.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349AD519B556640017DE70 /* Ball.m */; };
+		E1349AD919B557160017DE70 /* BallView.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349AD819B557160017DE70 /* BallView.m */; };
+		E1349ADF19B5651E0017DE70 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349ADE19B5651E0017DE70 /* MainViewController.m */; };
+		E1349AE219B5667D0017DE70 /* StrokeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1349AE119B5667D0017DE70 /* StrokeLabel.m */; };
+		E1637BD819B69CB300A984D6 /* hit.aif in Resources */ = {isa = PBXBuildFile; fileRef = E1637BD519B69CB300A984D6 /* hit.aif */; };
+		E1637BD919B69CB300A984D6 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E1637BD619B69CB300A984D6 /* bg.png */; };
+		E1637BDA19B69CB300A984D6 /* ball1.png in Resources */ = {isa = PBXBuildFile; fileRef = E1637BD719B69CB300A984D6 /* ball1.png */; };
 		E1D876B119B5558500FC51A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D876B019B5558500FC51A1 /* Foundation.framework */; };
 		E1D876B319B5558500FC51A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D876B219B5558500FC51A1 /* CoreGraphics.framework */; };
 		E1D876B519B5558500FC51A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D876B419B5558500FC51A1 /* UIKit.framework */; };
@@ -32,6 +43,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E1300A3319B8198400AD1F29 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		E1300A3419B8198400AD1F29 /* Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Block.m; sourceTree = "<group>"; };
+		E1300A3619B81BFD00AD1F29 /* BlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockView.h; sourceTree = "<group>"; };
+		E1300A3719B81BFD00AD1F29 /* BlockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockView.m; sourceTree = "<group>"; };
+		E1349ACE19B555FC0017DE70 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		E1349ACF19B555FC0017DE70 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		E1349AD119B556130017DE70 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E1349AD219B556130017DE70 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E1349AD419B556640017DE70 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		E1349AD519B556640017DE70 /* Ball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ball.m; sourceTree = "<group>"; };
+		E1349AD719B557160017DE70 /* BallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BallView.h; sourceTree = "<group>"; };
+		E1349AD819B557160017DE70 /* BallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BallView.m; sourceTree = "<group>"; };
+		E1349ADD19B5651E0017DE70 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E1349ADE19B5651E0017DE70 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E1349AE019B5667D0017DE70 /* StrokeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrokeLabel.h; sourceTree = "<group>"; };
+		E1349AE119B5667D0017DE70 /* StrokeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrokeLabel.m; sourceTree = "<group>"; };
+		E1637BD519B69CB300A984D6 /* hit.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = hit.aif; sourceTree = "<group>"; };
+		E1637BD619B69CB300A984D6 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		E1637BD719B69CB300A984D6 /* ball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball1.png; sourceTree = "<group>"; };
 		E1D876AD19B5558500FC51A1 /* 3D Ball Escalated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3D Ball Escalated.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D876B019B5558500FC51A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1D876B219B5558500FC51A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +104,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E1349ACB19B555CE0017DE70 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1349AD419B556640017DE70 /* Ball.h */,
+				E1349AD519B556640017DE70 /* Ball.m */,
+				E1300A3319B8198400AD1F29 /* Block.h */,
+				E1300A3419B8198400AD1F29 /* Block.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E1349ACC19B555D50017DE70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1349AE019B5667D0017DE70 /* StrokeLabel.h */,
+				E1349AE119B5667D0017DE70 /* StrokeLabel.m */,
+				E1349ACE19B555FC0017DE70 /* GameView.h */,
+				E1349ACF19B555FC0017DE70 /* GameView.m */,
+				E1349AD719B557160017DE70 /* BallView.h */,
+				E1349AD819B557160017DE70 /* BallView.m */,
+				E1300A3619B81BFD00AD1F29 /* BlockView.h */,
+				E1300A3719B81BFD00AD1F29 /* BlockView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E1349ACD19B555DD0017DE70 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E1349AD119B556130017DE70 /* GameViewController.h */,
+				E1349AD219B556130017DE70 /* GameViewController.m */,
+				E1349ADD19B5651E0017DE70 /* MainViewController.h */,
+				E1349ADE19B5651E0017DE70 /* MainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E1637BD419B69CAB00A984D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E1637BD519B69CB300A984D6 /* hit.aif */,
+				E1637BD619B69CB300A984D6 /* bg.png */,
+				E1637BD719B69CB300A984D6 /* ball1.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		E1D876A419B5558500FC51A1 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +184,10 @@
 		E1D876B619B5558500FC51A1 /* 3D Ball Escalated */ = {
 			isa = PBXGroup;
 			children = (
+				E1637BD419B69CAB00A984D6 /* Resources */,
+				E1349ACD19B555DD0017DE70 /* Controller */,
+				E1349ACC19B555D50017DE70 /* View */,
+				E1349ACB19B555CE0017DE70 /* Model */,
 				E1D876BF19B5558500FC51A1 /* AppDelegate.h */,
 				E1D876C019B5558500FC51A1 /* AppDelegate.m */,
 				E1D876C219B5558500FC51A1 /* Images.xcassets */,
@@ -219,7 +300,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1637BD819B69CB300A984D6 /* hit.aif in Resources */,
+				E1637BDA19B69CB300A984D6 /* ball1.png in Resources */,
 				E1D876BB19B5558500FC51A1 /* InfoPlist.strings in Resources */,
+				E1637BD919B69CB300A984D6 /* bg.png in Resources */,
 				E1D876C319B5558500FC51A1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,8 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1349AE219B5667D0017DE70 /* StrokeLabel.m in Sources */,
+				E1349AD619B556640017DE70 /* Ball.m in Sources */,
+				E1349AD319B556130017DE70 /* GameViewController.m in Sources */,
+				E1349AD019B555FC0017DE70 /* GameView.m in Sources */,
+				E1300A3819B81BFD00AD1F29 /* BlockView.m in Sources */,
 				E1D876C119B5558500FC51A1 /* AppDelegate.m in Sources */,
+				E1349ADF19B5651E0017DE70 /* MainViewController.m in Sources */,
+				E1300A3519B8198400AD1F29 /* Block.m in Sources */,
 				E1D876BD19B5558500FC51A1 /* main.m in Sources */,
+				E1349AD919B557160017DE70 /* BallView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +452,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "3D Ball Escalated/3D Ball Escalated-Prefix.pch";
 				INFOPLIST_FILE = "3D Ball Escalated/3D Ball Escalated-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -373,6 +466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "3D Ball Escalated/3D Ball Escalated-Prefix.pch";
 				INFOPLIST_FILE = "3D Ball Escalated/3D Ball Escalated-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -437,6 +531,7 @@
 				E1D876DB19B5558500FC51A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1D876DC19B5558500FC51A1 /* Build configuration list for PBXNativeTarget "3D Ball EscalatedTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +540,7 @@
 				E1D876DE19B5558500FC51A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

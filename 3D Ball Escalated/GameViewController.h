@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Ball.h"
 
-@interface GameViewController : UIViewController
+@interface GameViewController : UIViewController<UIAccelerometerDelegate, BallDelegate>
+
+- (id)initWithGameFrame: (CGRect) frame;
+- (void) start;
+- (void) pause;
+- (void) reset;
 
 @end

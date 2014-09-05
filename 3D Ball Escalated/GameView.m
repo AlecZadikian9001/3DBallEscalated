@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        [self setImage:[UIImage imageNamed:@"bg.png"]];
     }
     return self;
 }

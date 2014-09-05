@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface BlockView : UIView
+@property(nonatomic) double heightRatio;
+@property(nonatomic) double maxSize;
+@property(nonatomic) double minSize;
 
+- (CGRect) newRectFromRect: (CGRect) rect;
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Ball.h"
 
-@interface BallView : UIView
+@interface BallView : UIImageView
+
+@property(nonatomic) double maxSize;
+@property(nonatomic) double minSize;
+
+- (void) updateWithX: (double) x Y: (double) y Z_ratio: (double) z;
+- (void) bounceOnSide: (Side) side;
 
 @end
